@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ralat-ind",
+    "role": "Web Developer Intern",
+    "company": "Ralat.Ind",
+    "type": "Intern",
+    "period": "Apr 2026 — Present",
+    "duration": "Present",
+    "summary": "Mengembangkan arsitektur API backend menggunakan Express.js serta mengintegrasikan UI frontend menggunakan Next.js.",
+    "companyDescription": "RALAT.ind merupakan sebuah startup di bidang pendidikan yang berfokus pada pengembangan layanan pembelajaran berbasis evaluasi dan pemahaman mendalam. Kami hadir sebagai solusi yang mendukung siswa dalam mengidentifikasi, memahami, dan memperbaiki kesalahan melalui platform try out, video pembahasan, dan bimbingan belajar yang sistematis. Dengan pendekatan reflektif dan adaptif, RALAT berkomitmen untuk menciptakan ekosistem belajar yang progresif, inklusif, dan berorientasi pada peningkatan kualitas pembelajaran di Indonesia.",
+    "highlights": [
+      "Express.js & Next.js Integration",
+      "Code Review with Git & GitHub",
+      "Docker Environment Integration"
+    ],
+    "image": "/ralat_logo.png",
+    "imageAlt": "Web Developer Intern at Ralat.Ind",
+    "monogram": "RI"
+  },
+  {
+    "id": "pijak-ibm",
+    "role": "AI Engineer Cohort",
+    "company": "Pijak in collaboration with IBM SkillsBuild",
+    "type": "Trainee",
+    "period": "Feb 2026 — Jun 2026",
+    "duration": "5 months",
+    "summary": "Mengikuti program kompetensi intensif Artificial Intelligence dan Machine Learning berbasis Python. Berperan sebagai AI Model Developer utama pada proyek capstone Jabarulin.",
+    "highlights": [
+      "NLP based recommendation system",
+      "IndoBERT, TF-IDF, and Cosine Similarity",
+      "Technical documentation with Git"
+    ],
+    "image": "/pijak_in_collaboration_with_ibm_skillsbuild.jpg",
+    "imageAlt": "AI Engineer Cohort",
+    "monogram": "PI"
+  }
+]

@@ -1,0 +1,179 @@
+[
+  {
+    "id": "jabarulin",
+    "number": "01",
+    "name": "Jabarulin",
+    "role": "AI Model Developer",
+    "category": "Fullstack & AI",
+    "featured": true,
+    "summary": "Sistem Rekomendasi Wisata Cerdas Berbasis NLP di Jawa Barat. Rekomendasi destinasi murni dihasilkan dari model klasifikasi hybrid AI (IndoBERT & Semantic Search) yang dilatih khusus, sedangkan Google Gemini LLM bertindak sebagai explainable output untuk mengolah hasil rekomendasi menjadi bahasa yang mudah dibaca oleh pengguna.",
+    "highlights": [
+      "Mengenali preferensi pengguna menggunakan arsitektur IndoBERT",
+      "Memanfaatkan LLM API (Google Gemini) sebagai explainable output untuk menyajikan hasil rekomendasi dari model AI secara interaktif dan human-readable",
+      "Menggunakan TF-IDF dan Cosine Similarity untuk ekstraksi dan perbandingan teks"
+    ],
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "FastAPI",
+      "Python",
+      "PyTorch",
+      "IndoBERT",
+      "Docker",
+      "Gemini LLM"
+    ],
+    "images": [
+      {
+        "src": "/projects/jabarulin/jabarulin foto.png",
+        "alt": "Jabarulin Chat Interface",
+        "label": "Jabarulin AI Chat",
+        "description": "Antarmuka pengguna chatbot cerdas dengan alur kategori terpandu."
+      },
+      {
+        "src": "/projects/jabarulin/jabarulin foto 1.png",
+        "alt": "Jabarulin UI",
+        "label": "Rekomendasi Wisata",
+        "description": "Sistem rekomendasi destinasi yang spesifik."
+      },
+      {
+        "src": "/projects/jabarulin/jabarulin foto 2.png",
+        "alt": "Jabarulin UI",
+        "label": "Eksplorasi Jabar",
+        "description": "Pencarian destinasi wisata cerdas di Jawa Barat."
+      },
+      {
+        "src": "/projects/jabarulin/jabarulin foto 3.png",
+        "alt": "Jabarulin UI",
+        "label": "Filter Dinamis",
+        "description": "Integrasi filter negasi dan lokasi otomatis."
+      }
+    ],
+    "link": "https://github.com/dazidhan/PJK-GM049"
+  },
+  {
+    "id": "santaistudy",
+    "number": "02",
+    "name": "SantaiStudy",
+    "role": "Fullstack Developer",
+    "category": "Fullstack & AI",
+    "featured": true,
+    "summary": "Platform asisten belajar berbasis AI yang dirancang untuk merevolusi cara mahasiswa mengelola beban akademik. Memadukan Google Gemini AI dan Tesseract OCR untuk meracik jadwal Anti-Stress dan memecah tugas menjadi langkah kecil.",
+    "highlights": [
+      "Document AI menggunakan Tesseract OCR & spaCy NLP untuk ekstraksi data silabus/tugas otomatis",
+      "Mengintegrasikan Gemini AI untuk Mood-Based Scheduling dan AI Task Breaker berbasis psikologi kognitif",
+      "Mengembangkan arsitektur Microservices dengan React, Node.js, FastAPI, dan MongoDB"
+    ],
+    "techStack": [
+      "React.js",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "FastAPI",
+      "Python",
+      "MongoDB",
+      "Docker",
+      "Gemini AI",
+      "Tesseract OCR"
+    ],
+    "images": [
+      {
+        "src": "/projects/santaistudy/SantaiStudy foto (1).png",
+        "alt": "SantaiStudy Dashboard",
+        "label": "AI Study Assistant",
+        "description": "Dashboard utama asisten belajar AI."
+      },
+      {
+        "src": "/projects/santaistudy/SantaiStudy foto (2).png",
+        "alt": "SantaiStudy Task Breaker",
+        "label": "AI Task Breaker",
+        "description": "Memecah tugas besar menjadi micro-steps."
+      },
+      {
+        "src": "/projects/santaistudy/SantaiStudy foto (3).png",
+        "alt": "SantaiStudy Calendar",
+        "label": "Anti-Stress Calendar",
+        "description": "Pembuat jadwal berdasarkan kapasitas harian."
+      },
+      {
+        "src": "/projects/santaistudy/SantaiStudy foto (4).png",
+        "alt": "SantaiStudy Gamification",
+        "label": "XP & Gamifikasi",
+        "description": "Sistem level dan poin XP untuk motivasi belajar."
+      },
+      {
+        "src": "/projects/santaistudy/SantaiStudy foto (5).png",
+        "alt": "SantaiStudy Document AI",
+        "label": "Tukang Baca Otomatis",
+        "description": "Ekstraksi dokumen akademik menggunakan OCR."
+      },
+      {
+        "src": "/projects/santaistudy/SantaiStudy foto (6).png",
+        "alt": "SantaiStudy Mood Tracking",
+        "label": "Mood-Based Scheduling",
+        "description": "Rekomendasi tugas berdasarkan energi mental."
+      }
+    ],
+    "link": "https://github.com/dazidhan/SantaiStudy"
+  },
+  {
+    "id": "titiktemu",
+    "number": "03",
+    "name": "TitikTemu",
+    "role": "Fullstack Developer",
+    "category": "Fullstack",
+    "featured": true,
+    "summary": "Platform manajemen dan pemesanan slot area kerja (co-working space) real-time yang diimplementasikan sebagai aplikasi full-stack modern dengan arsitektur terkini (clean code, Docker, stateless JWT httpOnly).",
+    "highlights": [
+      "Integrasi gerbang pembayaran Midtrans Snap SDK untuk simulasi transaksi yang aman",
+      "Autentikasi & profil aman berbasis stateless JWT melalui httpOnly cookies",
+      "Sistem pemesanan interaktif dengan validasi jadwal otomatis mencegah double-booking"
+    ],
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Midtrans",
+      "Docker"
+    ],
+    "images": [
+      {
+        "src": "/projects/titiktemu/titiktemu foto (1).png",
+        "alt": "TitikTemu Landing Page",
+        "label": "Platform TitikTemu",
+        "description": "Antarmuka pengguna pencarian dan penyewaan ruang kerja."
+      },
+      {
+        "src": "/projects/titiktemu/titiktemu foto (2).png",
+        "alt": "TitikTemu Dashboard",
+        "label": "User Dashboard",
+        "description": "Dashboard manajemen profil dan pemesanan pengguna."
+      },
+      {
+        "src": "/projects/titiktemu/titiktemu foto (3).png",
+        "alt": "TitikTemu Booking",
+        "label": "Interactive Booking",
+        "description": "Sistem reservasi real-time dengan validasi ketersediaan."
+      },
+      {
+        "src": "/projects/titiktemu/titiktemu foto (4).png",
+        "alt": "TitikTemu Admin",
+        "label": "Admin Panel",
+        "description": "Panel administrasi untuk mengelola ruangan dan transaksi."
+      },
+      {
+        "src": "/projects/titiktemu/titiktemu foto (5).png",
+        "alt": "TitikTemu Payment",
+        "label": "Midtrans Integration",
+        "description": "Checkout pembayaran digital aman terintegrasi."
+      }
+    ],
+    "link": "https://github.com/dazidhan/TitikTemu"
+  }
+]
