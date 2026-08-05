@@ -175,5 +175,52 @@
       }
     ],
     "link": "https://github.com/dazidhan/TitikTemu"
+  },
+  {
+    "id": "teamify",
+    "number": "04",
+    "name": "Teamify (Coming Soon)",
+    "role": "Fullstack Developer",
+    "category": "Fullstack",
+    "featured": true,
+    "summary": "Aplikasi berbasis web untuk mengelola operasional HR dan manajemen karyawan secara terpusat di dalam perusahaan. Sistem ini dilengkapi dengan alur registrasi mandiri bagi karyawan/peserta magang yang harus melalui persetujuan oleh HR Admin.",
+    "highlights": [
+      "Manajemen kehadiran (attendance), pengajuan cuti/izin, manajemen shift kerja, rekrutmen sederhana (ATS)",
+      "Autentikasi JWT (JSON Web Token) untuk keamanan sesi login & Bcrypt untuk enkripsi password",
+      "File Storage Local Volume Storage (berkas unggahan disimpan di direktori server lokal dan dihubungkan via Docker Volume)"
+    ],
+    "techStack": [
+      "React.js",
+      "Vite",
+      "Tailwind CSS",
+      "Zustand",
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Docker"
+    ],
+    "images": [
+      {
+        "src": "/projects/teamify/teamify (1).jpeg",
+        "alt": "Teamify App",
+        "label": "Teamify HR Management",
+        "description": "Dashboard manajemen HR dan operasional karyawan."
+      },
+      {
+        "src": "/projects/teamify/teamify (2).jpeg",
+        "alt": "Teamify Dashboard",
+        "label": "Manajemen Kehadiran",
+        "description": "Sistem absensi dan pengajuan cuti interaktif."
+      },
+      {
+        "src": "/projects/teamify/teamify (3).jpeg",
+        "alt": "Teamify Staff",
+        "label": "Manajemen Staff",
+        "description": "Pencatatan data karyawan dan rekrutmen (ATS)."
+      }
+    ],
+    "link": "https://github.com/dazidhan/Teamify"
   }
 ]
