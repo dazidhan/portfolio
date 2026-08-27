@@ -184,15 +184,15 @@ export default function ProjectsSection() {
 
         {/* Projects List */}
         <div className="flex flex-col gap-16 sm:gap-20 lg:gap-24">
-          {featuredProjects.map((project, index) => (
+          {featuredProjects.slice(0, 3).map((project, index, arr) => (
             <div key={project.id} className="contents">
               <ProjectCard project={project} index={index} />
-              {index < featuredProjects.length - 1 && (
+              {index < arr.length - 1 && (
                 <div className="flex items-center gap-4 py-2 font-mono text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-foreground/65 sm:py-6 sm:text-[0.65rem] lg:py-8">
                   <span className="h-px flex-1 bg-foreground/10" />
                   <span className="shrink-0">
                     Next project / {String(index + 2).padStart(2, "0")} /{" "}
-                    {String(featuredProjects.length).padStart(2, "0")}
+                    {String(arr.length).padStart(2, "0")}
                   </span>
                   <span className="h-px flex-1 bg-foreground/10" />
                 </div>
