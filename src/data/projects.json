@@ -133,13 +133,11 @@
     ],
     "techStack": [
       "Next.js",
+      "JavaScript",
       "TypeScript",
       "Tailwind CSS",
       "Node.js",
       "Express.js",
-      "MongoDB",
-      "JWT",
-      "Midtrans",
       "Docker"
     ],
     "images": [
@@ -222,5 +220,58 @@
       }
     ],
     "link": "https://github.com/dazidhan/Teamify"
+  },
+  {
+    "id": "thekoppass",
+    "number": "05",
+    "name": "The KopPass (LFC Tickets)",
+    "role": "Fullstack Developer",
+    "category": "Fullstack",
+    "featured": true,
+    "summary": "Platform penjualan tiket sepak bola modern dan premium yang sangat terinspirasi oleh estetika Liverpool FC dan Stadion Anfield. Platform ini memberikan pengalaman pengguna yang mulus untuk melihat jadwal pertandingan, memilih tiket dengan ketersediaan stok real-time dan harga dinamis, melakukan pembayaran (checkout) secara aman dengan countdown timer, hingga menghasilkan E-Ticket digital yang dilengkapi kode QR.",
+    "highlights": [
+      "Redis API Caching & Distributed Ticket Locking (Mutex) untuk mencegah Race Condition saat War Ticket",
+      "Global Rate Limiter (Redis) untuk melindungi server dari serangan DDoS dan Spam",
+      "Payment Gateway Midtrans (Snap) terintegrasi untuk pemrosesan transaksi yang aman"
+    ],
+    "techStack": [
+      "Next.js",
+      "Tailwind CSS",
+      "Zustand",
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "images": [
+      {
+        "src": "/projects/TheKopPass/TheKopPass.png",
+        "alt": "The KopPass Landing Page",
+        "label": "The KopPass",
+        "description": "Platform penjualan tiket sepak bola modern ala Liverpool FC."
+      },
+      {
+        "src": "/projects/TheKopPass/TheKopPass (2).png",
+        "alt": "The KopPass Tickets",
+        "label": "Ketersediaan Real-time",
+        "description": "Pemilihan tiket dengan ketersediaan stok real-time dan harga dinamis."
+      },
+      {
+        "src": "/projects/TheKopPass/TheKopPass (3).png",
+        "alt": "The KopPass Checkout",
+        "label": "Secure Checkout",
+        "description": "Pembayaran aman dengan countdown timer dan Midtrans."
+      },
+      {
+        "src": "/projects/TheKopPass/TheKopPass (4).png",
+        "alt": "The KopPass E-Ticket",
+        "label": "Digital E-Ticket",
+        "description": "E-Ticket digital yang dilengkapi kode QR untuk akses masuk."
+      }
+    ],
+    "link": "https://github.com/dazidhan/The-KopPass"
   }
 ]
