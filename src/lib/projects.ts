@@ -32,6 +32,7 @@ export interface Project {
   name: string;
   role: string;
   category: ProjectCategory;
+  discipline?: string;
   featured: boolean;
   experienceId?: string;
   experienceLabel?: string;

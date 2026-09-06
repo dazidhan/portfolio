@@ -56,17 +56,42 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             Highlights
           </p>
           <ul className="space-y-2">
-            {project.highlights.map((highlight, i) => (
-              <li
-                key={highlight}
-                className="flex items-start gap-3 text-[0.75rem] leading-relaxed text-foreground/70 sm:text-sm"
-              >
-                <span className="mt-0.5 font-mono text-[0.6rem] font-semibold text-foreground/35">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span>{highlight}</span>
-              </li>
-            ))}
+            {project.highlights.map((highlight, i) => {
+              const colonIndex =
+                highlight.indexOf(":\n") !== -1
+                  ? highlight.indexOf(":\n")
+                  : highlight.indexOf(": ");
+              const hasTitle = colonIndex !== -1 && colonIndex < 90;
+              const title = hasTitle ? highlight.slice(0, colonIndex) : null;
+              const body = hasTitle
+                ? highlight.slice(
+                    colonIndex + (highlight[colonIndex + 1] === "\n" ? 2 : 2),
+                  )
+                : highlight;
+
+              return (
+                <li
+                  key={highlight}
+                  className="flex items-start gap-3 text-[0.75rem] leading-relaxed text-foreground/70 sm:text-sm"
+                >
+                  <span className="mt-0.5 font-mono text-[0.6rem] font-semibold text-foreground/35">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    {hasTitle ? (
+                      <>
+                        <strong className="font-semibold text-foreground block sm:inline sm:mr-1.5">
+                          {title}:
+                        </strong>
+                        <span>{body}</span>
+                      </>
+                    ) : (
+                      <span>{highlight}</span>
+                    )}
+                  </div>
+                </li>
+              );
+            })}
           </ul>
         </div>
 

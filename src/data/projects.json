@@ -280,27 +280,26 @@
     "name": "RouteFlow",
     "role": "Fullstack Developer",
     "category": "Fullstack",
+    "discipline": "Fullstack Development & Real-Time Systems",
     "featured": true,
-    "summary": "Platform web fullstack untuk manajemen pengiriman barang dan dispatch armada logistik real-time dengan antarmuka SaaS modern. Menghubungkan Customer, Driver Mitra, dan Admin Command Hub melalui telemetri live GPS via Socket.IO, kalkulator tarif instan, rute interaktif Leaflet, dan manajemen pembayaran terpadu.",
+    "summary": "Platform manajemen pengiriman logistik dan dispatch real-time berbasis web yang menghubungkan tiga peran utama: Customer, Driver, dan Admin dalam satu ekosistem terpadu. Sistem ini menyederhanakan alur pengiriman dari awal hingga akhir (end-to-end delivery)—mulai dari pembuatan order dengan penentuan titik lokasi interaktif dan kalkulasi tarif otomatis, sistem penerimaan order instan bagi driver, pelacakan armada secara live GPS tracking, verifikasi tanda tangan digital Proof of Delivery (POD), hingga integrasi pembayaran aman dengan Midtrans Payment Gateway.",
     "highlights": [
-      "Arsitektur Monorepo modular (Next.js 16 App Router & Express.js TypeScript) terorkestrasi penuh dengan Docker Compose, PostgreSQL, dan Redis",
-      "Telemetri armada & pelacakan live GPS real-time via Socket.IO dan peta interaktif Leaflet dengan kompas rotasi navigasi serta simulasi rute otomatis",
-      "Ekosistem multi-peran (Customer, Driver Partner, Admin Dispatch Hub) dilengkapi verifikasi legalitas kurir (KTP/SIM/STNK), Proof of Delivery (POD), dan manajemen dompet digital"
+      "Real-Time Bidirectional Dispatch & Live GPS Tracking (Socket.IO): Menyelesaikan masalah desinkronisasi status pengiriman konvensional dengan arsitektur event-driven dua arah via Socket.IO untuk pembaruan koordinat posisi kurir secara langsung, penerimaan order instan, dan live chat antar pihak tanpa reload halaman.",
+      "Finite State Machine (FSM) Order Lifecycle & Digital Proof of Delivery (POD): Mencegah anomali transisi status pengiriman dan sengketa paket dengan validasi state machine yang ketat (PENDING → ASSIGNED → PICKED_UP → DELIVERED), dilengkapi fitur cetak label resi barcode serta konfirmasi penerimaan paket berupa tanda tangan digital dan foto dokumentasi.",
+      "Dynamic Cost Estimation & Seamless Midtrans Payment Integration: Mengatasi inefisiensi perhitungan tarif manual dan verifikasi transfer tradisional melalui kalkulator ongkos kirim cerdas berbasis jarak koordinat dan bobot paket, terintegrasi penuh dengan Midtrans Core API untuk pembayaran multi-channel instan (QRIS, Virtual Account, & E-Wallet)."
     ],
     "techStack": [
-      "Next.js",
-      "React",
+      "Next.js 16",
       "TypeScript",
       "Tailwind CSS",
-      "Leaflet",
       "Zustand",
-      "TanStack Query",
+      "Socket.IO",
       "Node.js",
       "Express.js",
-      "Prisma",
+      "Prisma ORM",
       "PostgreSQL",
-      "Socket.IO",
-      "Redis",
+      "Leaflet / OSM",
+      "Midtrans API",
       "Docker"
     ],
     "images": [

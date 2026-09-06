@@ -117,7 +117,7 @@ export default async function ProjectDetailPage({
                 Discipline
               </p>
               <p className="mt-2 text-sm font-semibold">
-                {formatProjectCategory(project.category)} Development
+                {project.discipline ?? `${formatProjectCategory(project.category)} Development`}
               </p>
 
               {project.experienceId && (
@@ -256,17 +256,42 @@ export default async function ProjectDetailPage({
                 Key highlights
               </p>
               <ol className="mt-6 space-y-5">
-                {project.highlights.map((highlight, index) => (
-                  <li
-                    key={highlight}
-                    className="grid grid-cols-[2rem_1fr] gap-3 text-sm leading-relaxed text-foreground/68 sm:text-base"
-                  >
-                    <span className="font-mono text-[0.58rem] font-semibold text-foreground/35">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <span>{highlight}</span>
-                  </li>
-                ))}
+                {project.highlights.map((highlight, index) => {
+                  const colonIndex =
+                    highlight.indexOf(":\n") !== -1
+                      ? highlight.indexOf(":\n")
+                      : highlight.indexOf(": ");
+                  const hasTitle = colonIndex !== -1 && colonIndex < 90;
+                  const title = hasTitle ? highlight.slice(0, colonIndex) : null;
+                  const body = hasTitle
+                    ? highlight.slice(
+                        colonIndex + (highlight[colonIndex + 1] === "\n" ? 2 : 2),
+                      )
+                    : highlight;
+
+                  return (
+                    <li
+                      key={highlight}
+                      className="grid grid-cols-[2rem_1fr] gap-3 text-sm leading-relaxed text-foreground/68 sm:text-base"
+                    >
+                      <span className="font-mono text-[0.58rem] font-semibold text-foreground/35">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <div>
+                        {hasTitle ? (
+                          <>
+                            <strong className="mb-1 block font-semibold text-foreground">
+                              {title}
+                            </strong>
+                            <span>{body}</span>
+                          </>
+                        ) : (
+                          <span>{highlight}</span>
+                        )}
+                      </div>
+                    </li>
+                  );
+                })}
               </ol>
             </div>
 
