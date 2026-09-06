@@ -305,31 +305,31 @@
     ],
     "images": [
       {
-        "src": "/projects/RouteFlow/RouteFlow - Dashboard.png",
+        "src": "/projects/RouteFlow/RouteFlow - Dashboard - Crop.png",
         "alt": "RouteFlow Landing Page",
         "label": "Landing Page & Showcase",
         "description": "Hero interaktif berestetika SaaS modern, kalkulator estimasi tarif instan, dan pelacakan resi cepat."
       },
       {
-        "src": "/projects/RouteFlow/RouteFlow - Dashboard Customer.png",
+        "src": "/projects/RouteFlow/RouteFlow - Dashboard Customer - Crop.png",
         "alt": "RouteFlow Customer Dashboard",
         "label": "Customer Dashboard",
         "description": "Ringkasan metrik pengiriman aktif pelanggan, total pesanan selesai, dan riwayat mutasi transaksi."
       },
       {
-        "src": "/projects/RouteFlow/RouteFlow - Create Delivery Customer.png",
+        "src": "/projects/RouteFlow/RouteFlow - Create Delivery Customer - Crop.png",
         "alt": "RouteFlow Create Delivery Order",
         "label": "Formulir Pemesanan Interaktif",
         "description": "Pemilih lokasi interaktif Leaflet untuk titik jemput & tujuan serta kalkulasi tarif otomatis berdasarkan jarak dan berat."
       },
       {
-        "src": "/projects/RouteFlow/RouteFlow - Payment Methods Customer.png",
+        "src": "/projects/RouteFlow/RouteFlow - Payment Methods Customer - Crop.png",
         "alt": "RouteFlow Payment Methods",
         "label": "Manajemen Pembayaran Terpadu",
         "description": "Tampilan kartu bank bertekstur fisik realistis, integrasi dompet digital Indonesia, dan riwayat faktur pembayaran."
       },
       {
-        "src": "/projects/RouteFlow/RouteFlow - Earnings Driver.png",
+        "src": "/projects/RouteFlow/RouteFlow - Earnings Driver - Crop.png",
         "alt": "RouteFlow Driver Earnings & Wallet",
         "label": "Portal Driver & Dompet Mitra",
         "description": "Rekapitulasi performa pesanan pengantaran selesai, dompet mitra driver, dan riwayat penarikan saldo."
