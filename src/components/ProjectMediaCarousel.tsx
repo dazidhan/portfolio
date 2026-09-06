@@ -122,7 +122,7 @@ export default function ProjectMediaCarousel({
                     loading={
                       eagerFirstImage && slideIndex === 0 ? "eager" : "lazy"
                     }
-                    className="h-full w-full object-cover motion-reduce:transform-none"
+                    className="h-full w-full object-cover object-top motion-reduce:transform-none"
                     onLoad={() => swiperRef.current?.update()}
                   />
                 </motion.div>

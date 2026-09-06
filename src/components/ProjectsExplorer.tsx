@@ -122,7 +122,7 @@ export default function ProjectsExplorer({ projects }: ProjectsExplorerProps) {
                       alt={cover.alt}
                       fill
                       sizes="(min-width: 768px) 50vw, 100vw"
-                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035] motion-reduce:transition-none"
+                      className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.035] motion-reduce:transition-none"
                     />
                   )}
                   <span className="absolute inset-0 bg-linear-to-t from-black/55 via-black/0 to-black/8" />
