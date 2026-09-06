@@ -24,6 +24,13 @@ interface ProjectsExplorerProps {
   projects: Project[];
 }
 
+function isCategoryMatch(projectCategory: string, filter: ProjectFilter): boolean {
+  if (filter === "all") return true;
+  const categoryLower = (projectCategory || "").toLowerCase();
+  const filterLower = filter.toLowerCase();
+  return categoryLower === filterLower || categoryLower.includes(filterLower);
+}
+
 export default function ProjectsExplorer({ projects }: ProjectsExplorerProps) {
   const [activeFilter, setActiveFilter] = useState<ProjectFilter>("all");
 
@@ -31,7 +38,9 @@ export default function ProjectsExplorer({ projects }: ProjectsExplorerProps) {
     () =>
       activeFilter === "all"
         ? projects
-        : projects.filter((project) => project.category === activeFilter),
+        : projects.filter((project) =>
+            isCategoryMatch(project.category, activeFilter),
+          ),
     [activeFilter, projects],
   );
 
@@ -42,14 +51,16 @@ export default function ProjectsExplorer({ projects }: ProjectsExplorerProps) {
           counts[category] =
             category === "all"
               ? projects.length
-              : projects.filter((project) => project.category === category)
-                  .length;
+              : projects.filter((project) =>
+                  isCategoryMatch(project.category, category),
+                ).length;
           return counts;
         },
         { all: 0, frontend: 0, backend: 0, fullstack: 0 },
       ),
     [projects],
   );
+
 
   return (
     <section aria-labelledby="project-index-heading">

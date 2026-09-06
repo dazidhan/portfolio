@@ -7,10 +7,12 @@ export const projectCategories = [
   "fullstack",
 ] as const;
 
-export type ProjectCategory = Exclude<
-  (typeof projectCategories)[number],
-  "all"
->;
+export type ProjectCategory =
+  | Exclude<(typeof projectCategories)[number], "all">
+  | "Fullstack"
+  | "Fullstack & AI"
+  | string;
+
 
 export interface ProjectImage {
   src: string;
@@ -53,7 +55,9 @@ export function getProjectBySlug(slug: string) {
 }
 
 export function formatProjectCategory(category: ProjectCategory) {
-  if (category === "fullstack") return "Fullstack";
+  if (!category) return "";
+  if (category.toLowerCase() === "fullstack") return "Fullstack";
 
   return `${category[0].toUpperCase()}${category.slice(1)}`;
 }
+

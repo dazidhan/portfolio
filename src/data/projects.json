@@ -273,5 +273,69 @@
       }
     ],
     "link": "https://github.com/dazidhan/The-KopPass"
+  },
+  {
+    "id": "routeflow",
+    "number": "06",
+    "name": "RouteFlow",
+    "role": "Fullstack Developer",
+    "category": "Fullstack",
+    "featured": true,
+    "summary": "Platform web fullstack untuk manajemen pengiriman barang dan dispatch armada logistik real-time dengan antarmuka SaaS modern. Menghubungkan Customer, Driver Mitra, dan Admin Command Hub melalui telemetri live GPS via Socket.IO, kalkulator tarif instan, rute interaktif Leaflet, dan manajemen pembayaran terpadu.",
+    "highlights": [
+      "Arsitektur Monorepo modular (Next.js 16 App Router & Express.js TypeScript) terorkestrasi penuh dengan Docker Compose, PostgreSQL, dan Redis",
+      "Telemetri armada & pelacakan live GPS real-time via Socket.IO dan peta interaktif Leaflet dengan kompas rotasi navigasi serta simulasi rute otomatis",
+      "Ekosistem multi-peran (Customer, Driver Partner, Admin Dispatch Hub) dilengkapi verifikasi legalitas kurir (KTP/SIM/STNK), Proof of Delivery (POD), dan manajemen dompet digital"
+    ],
+    "techStack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Leaflet",
+      "Zustand",
+      "TanStack Query",
+      "Node.js",
+      "Express.js",
+      "Prisma",
+      "PostgreSQL",
+      "Socket.IO",
+      "Redis",
+      "Docker"
+    ],
+    "images": [
+      {
+        "src": "/projects/RouteFlow/RouteFlow - Dashboard.png",
+        "alt": "RouteFlow Landing Page",
+        "label": "Landing Page & Showcase",
+        "description": "Hero interaktif berestetika SaaS modern, kalkulator estimasi tarif instan, dan pelacakan resi cepat."
+      },
+      {
+        "src": "/projects/RouteFlow/RouteFlow - Dashboard Customer.png",
+        "alt": "RouteFlow Customer Dashboard",
+        "label": "Customer Dashboard",
+        "description": "Ringkasan metrik pengiriman aktif pelanggan, total pesanan selesai, dan riwayat mutasi transaksi."
+      },
+      {
+        "src": "/projects/RouteFlow/RouteFlow - Create Delivery Customer.png",
+        "alt": "RouteFlow Create Delivery Order",
+        "label": "Formulir Pemesanan Interaktif",
+        "description": "Pemilih lokasi interaktif Leaflet untuk titik jemput & tujuan serta kalkulasi tarif otomatis berdasarkan jarak dan berat."
+      },
+      {
+        "src": "/projects/RouteFlow/RouteFlow - Payment Methods Customer.png",
+        "alt": "RouteFlow Payment Methods",
+        "label": "Manajemen Pembayaran Terpadu",
+        "description": "Tampilan kartu bank bertekstur fisik realistis, integrasi dompet digital Indonesia, dan riwayat faktur pembayaran."
+      },
+      {
+        "src": "/projects/RouteFlow/RouteFlow - Earnings Driver.png",
+        "alt": "RouteFlow Driver Earnings & Wallet",
+        "label": "Portal Driver & Dompet Mitra",
+        "description": "Rekapitulasi performa pesanan pengantaran selesai, dompet mitra driver, dan riwayat penarikan saldo."
+      }
+    ],
+    "link": "https://github.com/dazidhan/RouteFlow"
   }
 ]
+
